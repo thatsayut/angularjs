@@ -1,0 +1,82 @@
+<div id="logindiv" style="background-color: rgb(1,55,101);" class="login-page container-fluid">
+
+    <div class="row">
+        <div class="container-rows">
+        <div id="animatediv" class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-md-offset-2">
+        <div class="account-wall" id="account-wall">
+            <img class="profile-img img-responsive" src="./img/login/loginheader.jpg">
+                    <form id="login-form" class="form-signin" ng-submit="login()">
+                        <div class="form-group">
+                            <input id="user_name" type="text" class="form-control text-center" style="font-size: 20px;" placeholder="หมายเลขสมาชิก" ng-model="form.username" required ng-required/>
+                        </div>
+                        <div class="form-group">
+                            <input id="pass_word" type="password" class="form-control text-center" style="font-size: 20px;" placeholder="รหัสผ่าน" ng-model="form.password" required ng-required/>
+                        </div>
+                        <div class="form-group">
+                            <label class="login-remember" style="font-size: 20px;">
+                                <input type="checkbox" ng-model="form.remember"/>
+                                 <span id="login-remember">ให้ฉันอยู่ในระบบ</span>
+                            </label>
+
+                        </div>
+                        <div class="form-group">
+                            <input id="login_btn" type="submit" style="font-size: 20px;" class="btn btn-primary btn-block" value="เข้าสู่ระบบ"/>
+                        </div>
+
+                    </form>
+                <div class="row login-button-row" style="text-align: center;">
+                    <label style="text-align: center;color: white; "> 
+                    <a id="signupacc" value="Register Account" href="http://www.unicity-easynet.com/tools/?action=register&url=members.unicity-th.com&lang=th" 
+                    style="color: gray;font-size: 20px;text-decoration: inherit;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ลงทะเบียนใช้ระบบเว็บ&nbsp; &nbsp;&nbsp;| &nbsp; 
+                    </a> 
+                    <a  id="resetpass" href="http://www.unicity-easynet.com/tools/?action=forgot&url=members.unicity-th.com&lang=th" target="_blank"  style="color: gray;font-size: 20px;text-decoration: inherit;">  ลืมรหัสผ่าน </a></label>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <img style="cursor: pointer;" ng-click="lanEN()" src="img/usa_2x.png" width="25" border="0"/>
+                    <img style="cursor: pointer;" ng-click="lanTH()" src="img/thailand_2x.png" width="25" border="0"/>
+
+                </div>
+                <hr class="style17 change" id="style17">
+                <div class="text-center social-icon-buttons" style="margin-bottom: 0">
+                <a href="https://www.facebook.com/UnicityInternational" target="_blank">
+                    <div class="social-icon-fb"></div>
+                </a>
+                <a href="https://line.me/R/ti/p/%40unicity" target="_blank">
+                    <div class="social-icon-line"></div>
+                </a>
+                <a href="https://instagram.com/unicity_thailand/" target="_blank">
+                    <div class="social-icon-ig"></div>
+                </a>
+                <a href="https://www.youtube.com/user/MKTunicity" target="_blank">
+                    <div class="social-icon-yt"></div>
+                </a>
+            </div>
+                     
+                    
+                    <div class="text-center loading-container hide">
+                        <div class="bubblingG">
+                            <span id="bubblingG_1"> </span>
+                            <span id="bubblingG_2"> </span>
+                            <span id="bubblingG_3"> </span>
+                        </div>
+                    </div>
+
+        </div>
+
+        </div>
+       
+
+
+    </div>
+    <div id="login-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            Please check the password again.
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+        <div class="footer-login text-center" style="font-size: 18px;">© {{date | date:'yyyy'}} Copyright Unicity Thailand, Inc. All Rights Reserved.</div>
